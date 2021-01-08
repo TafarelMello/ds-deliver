@@ -1,6 +1,7 @@
-import Footer from '../../components/Footer'
 import { ReactComponent as HomeImage } from '../../assets/home-imagem.svg'
+import { Link } from 'react-router-dom'
 
+import Footer from '../../components/Footer'
 import './styles.css'
 
 function Home() {
@@ -18,9 +19,9 @@ function Home() {
               porta
             </h3>
 
-            <a href='orders' className='home-btn-order'>
+            <Link to='/orders' className='home-btn-order'>
               FAZAR PEDIDO
-            </a>
+            </Link>
           </div>
 
           <div className='home-image'>
