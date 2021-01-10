@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react'
-import StepsHeader from '../../components/StepsHeader/StepsHeader'
-import ProductList from '../../components/ProductsList/ProductList'
+import StepsHeader from '../../components/StepsHeader/index'
+import ProductList from '../../components/ProductsList/index'
 
-import { Product } from './types'
+import { OrderLocationData, Product } from './types'
 import { fetchProducts } from '../../api'
 
 import './styles.css'
+import OrderLocation from '../../components/OrderLocation/index'
 
 function Orders() {
   const [products, setProducts] = useState<Product[]>([])
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [orderLocation, setOrderLOcation] = useState<OrderLocationData>()
 
   useEffect(() => {
     fetchProducts()
@@ -20,6 +23,9 @@ function Orders() {
     <div className='orders-container'>
       <StepsHeader />
       <ProductList products={products} />
+      <OrderLocation
+        onChangeLocation={(location) => setOrderLOcation(location)}
+      />
     </div>
   )
 }

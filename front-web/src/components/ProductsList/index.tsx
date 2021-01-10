@@ -1,5 +1,5 @@
 import { Product } from '../../pages/Orders/types'
-import ProductCard from '../ProductCard/ProductCard'
+import ProductCard from '../ProductCard/index'
 
 import './styles.css'
 
