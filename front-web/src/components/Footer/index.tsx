@@ -1,22 +1,20 @@
 import './styles.css'
 
-import { ReactComponent as YouTubeICon } from '../../assets/youtube.svg'
+import { ReactComponent as InstagramICon } from '../../assets/instagram.svg'
 
 function Footer() {
   return (
     <footer className='main-footer'>
       <p>App Desenvolvido na 2ª ed. do evento semanada DevSiperior</p>
-      <p>
-        desenvolvido por Tafarel Mello <span>sz</span>
-      </p>
+      <p>desenvolvido por Tafarel Mello</p>
 
       <div className='footer-icons'>
-        <a href='http:wwwgithub.com/tafarelmello' target='_new'>
-          <YouTubeICon />
+        <a href='http:www.github.com/tafarelmello' target='_new'>
+          <InstagramICon />
         </a>
 
         <a href='http://www.devsupeior-redesocial' target='_new'>
-          <YouTubeICon />
+          <InstagramICon />
         </a>
       </div>
     </footer>
