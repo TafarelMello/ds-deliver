@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
 import { ScrollView } from 'react-native-gesture-handler'
 import { useIsFocused, useNavigation } from '@react-navigation/native'
 import { Alert, StyleSheet, Text } from 'react-native'
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler'
+=======
+import { useIsFocused, useNavigation } from '@react-navigation/native'
+import React, { useEffect, useState } from 'react'
+import { Alert, StyleSheet, Text } from 'react-native'
+import {
+  ScrollView,
+  TouchableWithoutFeedback,
+} from 'react-native-gesture-handler'
+>>>>>>> 78cf355a6a9584cd062dba485343691aa095e414
 import { getOrders } from '../api'
 
 import Header from '../Header'
