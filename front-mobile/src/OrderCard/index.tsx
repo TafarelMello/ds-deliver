@@ -6,12 +6,9 @@ import dayjs from 'dayjs'
 import 'dayjs/locale/pt-br'
 import relativeTime from 'dayjs/plugin/relativeTime'
 
-<<<<<<< HEAD
 import 'intl'
 import 'intl/locale-data/jsonp/pt-BR'
 
-=======
->>>>>>> 78cf355a6a9584cd062dba485343691aa095e414
 dayjs.locale('pt-br')
 dayjs.extend(relativeTime)
 
@@ -23,11 +20,7 @@ function dateFromNow(date: string) {
   return dayjs(date).fromNow()
 }
 
-<<<<<<< HEAD
 export function formatPrice(price: number) {
-=======
-/* export function formatPrice(price: number) {
->>>>>>> 78cf355a6a9584cd062dba485343691aa095e414
   const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL',
@@ -35,22 +28,14 @@ export function formatPrice(price: number) {
   })
 
   return formatter.format(price)
-<<<<<<< HEAD
 }
-=======
-} */
->>>>>>> 78cf355a6a9584cd062dba485343691aa095e414
 
 export default function OrderCard({ order }: Props) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.orderName}>{order.id}</Text>
-<<<<<<< HEAD
         <Text style={styles.orderPrice}>{formatPrice(order.total)}</Text>
-=======
-        <Text style={styles.orderPrice}>{order.total}</Text>
->>>>>>> 78cf355a6a9584cd062dba485343691aa095e414
       </View>
       <Text style={styles.text}>{dateFromNow(order.moment)}</Text>
       <View style={styles.productsList}>
